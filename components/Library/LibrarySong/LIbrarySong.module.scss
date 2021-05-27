@@ -1,0 +1,12 @@
+.LibrarySong {
+    transition: .3s;
+    &:hover {
+        background: rgb(235, 241, 243);
+        cursor: pointer;
+    }
+    // outline: none !important;
+}
+
+.ActiveLibrarySong {
+    background:  rgb(208, 226, 231);
+}

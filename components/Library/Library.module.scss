@@ -1,0 +1,16 @@
+.Library{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: scroll;
+    box-shadow: 5px 5px 15px rgba($color: #beb6b6, $alpha: 1.0);
+    transition: .3s;
+    background: white;
+    z-index: 1;
+}
+
+.disabled {
+    transform: translateX(-100%);
+}
+

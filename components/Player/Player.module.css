@@ -1,0 +1,164 @@
+.button {
+    transition: .3s;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9), -5px -5px 15px rgba(255, 255, 255, 0.9);
+    border: none;
+}
+
+.button:hover {
+    /* background: rgb(221, 213, 213); */
+    cursor: pointer;
+}
+
+.button:active {
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.9);
+}
+
+.activeButton {
+  transition: .3s;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.9);
+  border: none;
+}
+
+.activeButton:hover {
+  cursor: pointer;
+}
+
+.loop {
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDMwIDE3LjMxNDE5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0aXRsZS8+PGcgZGF0YS1uYW1lPSJMYXllciAyIiBpZD0iTGF5ZXJfMiI+PGcgaWQ9IkludGVyZmFjZS1Tb2xpZCI+PHBhdGggZD0iTTIyLjQwMzgxLDIuODE0MTljLTMuMzUzNTIsMC02LjEzNjcyLDIuMTgwNjYtOC41MDg3OSw2LjY2Ni0xLjg5ODQ0LDMuNTg4ODctMy45NTg1LDUuMzM0LTYuMjk4ODMsNS4zMzRBNC45Mzc4NCw0LjkzNzg0LDAsMCwxLDIuNSwxMC4wNjQxOWE0LjkzNzg0LDQuOTM3ODQsMCwwLDEsNS4wOTYxOS00Ljc1LDYuMTk5ODMsNi4xOTk4MywwLDAsMSwxLjAyMDIuMDk2MTlMNy41NzUyLDUuNjYyODJhMS4yNSwxLjI1LDAsMCwwLC4yOTM0NSwyLjQ2NDg0LDEuMjI3MjcsMS4yMjcyNywwLDAsMCwuMjk1NDEtLjAzNTE1bDQuODcyMDctMS4xODE2NGExLjI1MDYyLDEuMjUwNjIsMCwwLDAsLjc5OTgxLTEuODE5MzRMMTEuMzgxODQuNjQ1MjRhMS4yNTAxMSwxLjI1MDExLDAsMSwwLTIuMTg4NDgsMS4yMDlMOS45MDIsMy4xMzc5MmE5LjAwOSw5LjAwOSwwLDAsMC0yLjMwNTg1LS4zMjM3M0E3LjQzNzM3LDcuNDM3MzcsMCwwLDAsMCwxMC4wNjQxOWE3LjQzNzM4LDcuNDM3MzgsMCwwLDAsNy41OTYxOSw3LjI1YzMuMzUzNTIsMCw2LjEzNjcyLTIuMTgwNjcsOC41MDg3OS02LjY2NiwxLjg5ODQ0LTMuNTg4ODYsMy45NTg1LTUuMzM0LDYuMjk4ODMtNS4zMzRhNC45Mzc4NCw0LjkzNzg0LDAsMCwxLDUuMDk2MTksNC43NSw0LjkzNzg0LDQuOTM3ODQsMCwwLDEtNS4wOTYxOSw0Ljc1LDYuODg3LDYuODg3LDAsMCwxLTIuNjgwMTgtLjU4MTA2QTEuMjQ5ODUsMS4yNDk4NSwwLDAsMCwxOC43MzczLDE2LjUzYTkuNDAzNTgsOS40MDM1OCwwLDAsMCwzLjY2NjUxLjc4NDE4QTcuNDM3MzgsNy40MzczOCwwLDAsMCwzMCwxMC4wNjQxOSw3LjQzNzM3LDcuNDM3MzcsMCwwLDAsMjIuNDAzODEsMi44MTQxOVoiIGlkPSJpbnRlcmZhY2Utc29saWQtbXVsdGltZWRpYS1sb29wLWJ1dHRvbiIvPjwvZz48L2c+PC9zdmc+');
+  height: 1.5rem;
+  width: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.volumeContainer {
+    position: relative;
+}
+
+.volumeContainer:hover {
+    cursor: pointer;
+}
+
+.volumeContainer .audioRange {
+  position: absolute;
+  right: 6px;
+  top: -25px;
+}
+
+@media (min-width:992px) {
+  .volumeContainer .audioRange{
+    right: 80px;
+    transform: rotate(0deg);
+  }
+}
+
+
+.shadow {
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9), -5px -5px 15px rgba(255, 255, 255, 0.9)
+}
+
+.audioRange {
+  width: 100%;
+  margin: 7.9px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+.audioRange:focus {
+  outline: none;
+}
+.audioRange::-webkit-slider-runnable-track {
+  background: #3071a9;
+  /* border: 0.2px solid #008cff; */
+  border-radius: 1.3px;
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+}
+.audioRange::-webkit-slider-thumb {
+  margin-top: -6.1px;
+  width: 17px;
+  height: 17px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2.7px solid  #3071a9;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.audioRange:focus::-webkit-slider-runnable-track {
+  background: #3276b1;
+}
+.audioRange::-moz-range-track {
+  background: #3071a9;
+  border: 0.2px solid #008cff;
+  border-radius: 1.3px;
+  width: 100%;
+  height: 1.2px;
+  cursor: pointer;
+}
+.audioRange::-moz-range-thumb {
+  width: 17px;
+  height: 17px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2.7px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.audioRange::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 17.3px 0;
+  color: transparent;
+  width: 100%;
+  height: 1.2px;
+  cursor: pointer;
+}
+.audioRange::-ms-fill-lower {
+  background: #2e6ca1;
+  border: 0.2px solid #008cff;
+  border-radius: 2.6px;
+}
+.audioRange::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #008cff;
+  border-radius: 2.6px;
+}
+.audioRange::-ms-thumb {
+  width: 17px;
+  height: 17px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2.7px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+.audioRange:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+.audioRange:focus::-ms-fill-upper {
+  background: #3276b1;
+}
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align:auto) {
+  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+  .audioRange {
+    margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+  }
+}
