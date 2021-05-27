@@ -2,9 +2,8 @@ This is a [Next.js](https://nextjs.org/) project which uses firebase and sounclo
 
 ## Hosted Website Link:
 
-```bash
 [waves](https://waves-2.web.app/)
-```
+
 
 ## Run it on your localhost:
 
